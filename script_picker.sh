@@ -15,28 +15,28 @@
 # part of the file):
 #
 # /----------------------------------------------------------------------------------------------\
-# |# My Script Listing										 |
-# |Any text here will be ignored by SP. 							 |
-# |												 |
-# |## Contents - The first "##" section will be ignored by SP, but subsequent sections will be	 |
-# |read in as categories of scripts.								 |
-# |[Some Category of Scripts](#anchor_link_to_this_category)					 |
-# |												 |
-# |[Some Other Category](#anchor_link_to_it)							 |
-# |												 |
-# |## Some Category of Scripts - All "##" sections from here on will be read by SP.		 |
-# |### [Some Script of Mine](link_to_file_in_repo.sh)						 |
-# |<!--Explanation of first parameter that script takes.					 |
+# |# My Script Listing                                                                           |
+# |Any text here will be ignored by SP.                                                          |
+# |                                                                                              |
+# |## Contents - The first "##" section will be ignored by SP, but subsequent sections will be   |
+# |read in as categories of scripts.                                                             |
+# |[Some Category of Scripts](#anchor_link_to_this_category)                                     |
+# |                                                                                              |
+# |[Some Other Category](#anchor_link_to_it)                                                     |
+# |                                                                                              |
+# |## Some Category of Scripts - All "##" sections from here on will be read by SP.              |
+# |### [Some Script of Mine](link_to_file_in_repo.sh)                                            |
+# |<!--Explanation of first parameter that script takes.                                         |
 # |Explanation of second parameter. This text does not show in GitHub's Markdown implementation  |
-# |and is only read by SP.-->									 |
-# |Short description of the script, both for the read-me and for SP to display in the menu.	 |
-# |												 |
-# |### [Another Script](another_script.sh)							 |
+# |and is only read by SP.-->                                                                    |
+# |Short description of the script, both for the read-me and for SP to display in the menu.      |
+# |                                                                                              |
+# |### [Another Script](another_script.sh)                                                       |
 # |<!--(none) - Type "(none)" to tell SP that there are no parameters taken by this script.-->   |
-# |Description of this script.									 |
-# |												 |
-# |## Some Other Category									 |
-# |[etc.]											 |
+# |Description of this script.                                                                   |
+# |                                                                                              |
+# |## Some Other Category                                                                        |
+# |[etc.]                                                                                        |
 # \----------------------------------------------------------------------------------------------/
 #
 # Recommended width:
