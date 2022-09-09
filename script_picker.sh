@@ -219,7 +219,7 @@ function collectScripts()
 
       # If we finished reading in the parameters, the description is next
       if [ "$READING_IN" == "desc" ]; then
-         SCR_DESCS+=($THE_LINE)
+         SCR_DESCS+=(${THE_LINE%%\[\(*}) # remove Markdown link to preview image
          READING_IN=""
       fi
    done
@@ -439,14 +439,14 @@ function handleMenuInput()
 
 # The script having finished by the time the sleep call below ends, this forked function uses
 # 'osascript' to type on the bash prompt an invocation of the script that the user selected. Uses
-# my personal Bash alias 'rb', which takes the name of a supplied script file and converts it to
+# my personal Bash alias 'rmb', which takes the name of a supplied script file and converts it to
 # the command "bash [full path to script]", in order to save space on the command prompt.
 function typeScriptCall()
 {
    sleep 0.1
    osascript -e 'on run argv
 tell application "System Events"
-keystroke "rb " & item 1 of argv
+keystroke "rmb " & item 1 of argv
 end tell
 end run' $1
 }
